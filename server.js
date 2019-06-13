@@ -1,12 +1,12 @@
 const express = require("express");
 const app = express();
-const PORT = 2901;
+const PORT = 1337;
 const mongoose = require('mongoose');
 
 
 app.use(express.json());
 
-app.use("/", require("./chatRoute"));
+app.use("/chat-app", require("./userRouter"));
 
 
 mongoose.connect('mongodb://localhost:27017/chatting-app',{useNewUrlParser: true})
