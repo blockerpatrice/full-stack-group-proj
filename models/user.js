@@ -7,4 +7,4 @@ const user = new Schema({
     chat: String
 })
 
-module.exports = mongoose.model("users", user)
+module.exports = mongoose.model("users", user);
