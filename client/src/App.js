@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import MessageList from './components/MessageList';
+import MessageList from './components/MessageList.js';
 
 class App extends Component {
     constructor() {
