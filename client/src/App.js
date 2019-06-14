@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import MessageList from './components/MessageList';
 
 class App extends Component {
     constructor() {
@@ -21,6 +22,7 @@ class App extends Component {
     render() {
         return(
             <>
+                <MessageList />
                 <button onClick={this.getUser}>Submit</button>
             </>
         )
