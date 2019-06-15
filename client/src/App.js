@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import MessageList from './messageList/MessageList.js';
-import { Navbar } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import MyNavbar from './navbar/MyNavbar.js';
 import Routes from './routes/Routes.js';
 
 class App extends Component {
@@ -24,16 +22,8 @@ class App extends Component {
     render() {
         return(
             <div className="app-container">
-                <Navbar fluid collapseOnSelect>
-                    <Navbar.Header>
-                        <Navbar.Brand>
-                            <Link to="/">Chatting App</Link>
-                        </Navbar.Brand>
-                        <Navbar.Toggle />
-                    </Navbar.Header>
-                </Navbar>
+                <MyNavbar />
                 <Routes />
-                <MessageList />
             </div>
         )
     }
