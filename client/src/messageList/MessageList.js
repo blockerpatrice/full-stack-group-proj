@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
+import './stylesmessagelist.css';
 
 const DUMMY_DATA = [
     {
-        senderId: 'perborgen',
+        senderId: 'Perborgen',
         text: "What's up?"
     },
     {
-        senderId: 'janedoe',
+        senderId: 'Janedoe',
         text: 'Great! How about you?'
     },
     {
-        senderId: 'perborgen',
+        senderId: 'Perborgen',
         text: 'Good to hear! I am great as well'
     }
 ]
@@ -26,10 +27,10 @@ class MessageList extends Component {
             <div className="message-list">
                 {DUMMY_DATA.map((message, index) => {
                     return (
-                        <>
-                            <div>{message.senderId}</div>
-                            <div>{message.text}</div>
-                        </>
+                        <div className="message">
+                            <div className="message-username">{message.senderId}:</div>
+                            <div className="message-text">{message.text}</div>
+                        </div>
                     )
                 })}
             </div>
