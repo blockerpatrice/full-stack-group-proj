@@ -4,14 +4,14 @@ import MyNavbar from './navbar/MyNavbar.js';
 import Routes from './routes/Routes.js';
 
 class App extends Component {
-    // constructor() {
-    //     super()
-    //     this.state = {
-    //         username: '', 
-    //         password: '', 
-    //         chat: ''
-    //     }
-    // }
+    constructor() {
+        super()
+        this.state = {
+            username: '', 
+            password: '', 
+            chat: ''
+        }
+    }
 
     getUser() {
         axios.get("/chat-app").then(response => {
