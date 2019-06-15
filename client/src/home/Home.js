@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Login from '../login-page/Login.js';
-import Signup from '../login-page/Signup.js';
+// import Signup from '../login-page/Signup.js';
 import './Home.css';
 
 class Home extends Component {
@@ -10,7 +10,6 @@ class Home extends Component {
             <div className="home">
                 <div className="lander">
                     <Login />
-                    <Signup />
                 </div>
             </div>
         );
