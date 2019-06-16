@@ -1,0 +1,26 @@
+{
+  "name": "full-stack-group-proj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benahink/full-stack-group-proj.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benahink/full-stack-group-proj/issues"
+  },
+  "homepage": "https://github.com/benahink/full-stack-group-proj#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.0"
+  }
+}
