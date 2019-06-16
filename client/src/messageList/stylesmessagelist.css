@@ -1,0 +1,20 @@
+.message{
+    display: flex;
+    flex-direction: row;
+}
+
+.message-username{
+    display: flex;
+    align-items: center;
+    font-size: 18pt;
+    margin: 8pt 5pt 8pt 5pt;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.message-text{
+    font-size: 15pt;
+    margin: 8pt 5pt 8pt 5pt;
+    padding: 5pt 12pt 5pt 12pt;
+    background-color: rgb(226, 255, 212);
+    border-radius: 12px;
+}

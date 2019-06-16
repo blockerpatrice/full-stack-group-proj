@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-<<<<<<< HEAD
 import MyNavbar from './navbar/MyNavbar.js';
 import Routes from './routes/Routes.js';
-=======
->>>>>>> master
-import MessageList from './messageList/MessageList.js';
 
 class App extends Component {
     constructor() {
