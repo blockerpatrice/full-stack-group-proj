@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+<<<<<<< HEAD
+import MyNavbar from './navbar/MyNavbar.js';
+import Routes from './routes/Routes.js';
+=======
+>>>>>>> master
 import MessageList from './messageList/MessageList.js';
 
 class App extends Component {
@@ -14,19 +19,18 @@ class App extends Component {
 
     getUser() {
         axios.get("/chat-app").then(response => {
-            
             console.log(response.data)
         })
     }
 
     render() {
         return(
-            <>
-                <MessageList />
-                <button onClick={this.getUser}>Submit</button>
-            </>
+            <div className="app-container">
+                <MyNavbar />
+                <Routes />
+            </div>
         )
     }
  }
  
- export default App
+ export default App;
