@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './stylesmessagelist.css';
+import './stylesmessagelist.css'
 
 const DUMMY_DATA = [
     {
@@ -27,10 +27,12 @@ class MessageList extends Component {
             <div className="message-list">
                 {DUMMY_DATA.map((message, index) => {
                     return (
-                        <div className="message">
-                            <div className="message-username">{message.senderId}:</div>
-                            <div className="message-text">{message.text}</div>
-                        </div>
+                        <>
+                            <div className="message">
+                                <div className="message-username">{message.senderId}:</div>
+                                <div className="message-text">{message.text}</div>
+                            </div>
+                        </>
                     )
                 })}
             </div>
